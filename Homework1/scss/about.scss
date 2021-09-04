@@ -1,0 +1,30 @@
+.section__about {
+  width: 45%;
+  margin-left: 18rem;
+  font-size: $fs-h3;
+  margin-top: 1rem;
+  &-title {
+    font-size: $fs-h2;
+  }
+}
+.section__about2 {
+  width: 45%;
+  margin-left: 18rem;
+  font-size: $fs-h3;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  &-title {
+    margin-top: 2rem;
+    font-size: $fs-h2;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 420px) {
+  .section__about {
+    width: 20rem;
+    margin-left: 1rem;
+  }
+  .section__about2 {
+    width: 20rem;
+    margin-left: 1rem;
+  }
+}

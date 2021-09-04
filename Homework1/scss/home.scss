@@ -1,0 +1,130 @@
+//This is the home section
+
+.grid-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  //home section
+  .section__home {
+    max-width: 90%;
+    margin-left: 18rem;
+    display: column;
+    margin-top: 1.5rem;
+
+    &-intro-title {
+      font-size: $fs-h2;
+    }
+
+    &--para {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &--slogan {
+      color: #ff7900;
+      font-weight: $fw-bold;
+      font-size: 1.5rem;
+      margin-bottom: 5rem;
+    }
+
+    &--btn {
+      background: linear-gradient(
+        45deg,
+        rgba(255, 121, 0, 1) 0%,
+        rgba(255, 178, 0, 1) 100%
+      );
+      border-radius: 0.5rem;
+      height: 4rem;
+      font-size: $fs-h6;
+      width: 20rem;
+      border-radius: none;
+      border: none;
+      color: $clr-light;
+      margin-bottom: 100px;
+    }
+  }
+  .section__costs {
+    display: column;
+    width: 50%;
+    margin-left: 15rem;
+    margin-top: 1.5rem;
+    margin-bottom: 6rem;
+    &-title {
+      font-size: $fs-h2;
+    }
+    &-input {
+      width: 6rem;
+      height: 2.5rem;
+    }
+    &-input2 {
+      height: 2.5rem;
+    }
+    &-breaker {
+      border-bottom: 0.1rem dotted $clr-dark;
+      margin-top: 1.5rem;
+    }
+    &-p {
+      font-size: $fs-h3;
+      margin-top: 1rem;
+    }
+  }
+  //business section
+  .section__business {
+    max-width: 80%;
+    display: column;
+    margin-left: 17rem;
+    margin-top: 1.5rem;
+    &-intro-title {
+      font-size: $fs-h2;
+    }
+    &-intro-para {
+      font-size: $fs-h3;
+    }
+    &-intro-list {
+      font-size: $fs-h3;
+      margin-left: 3rem;
+    }
+    &-table,
+    tr,
+    td {
+      border: 1px solid black;
+      font-size: $fs-h3;
+    }
+  }
+  .business__input {
+    margin-left: 15rem;
+    &-info {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+    &--input {
+      width: 16rem;
+      height: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .grid-column {
+    margin-left: -15rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: -16rem;
+  }
+  .section__home {
+    &-intro-title {
+      height: 10rem;
+    }
+    &--btn {
+      max-width: 50%;
+    }
+  }
+  .section__costs {
+    // width: 0;
+    padding-left: 3rem;
+  }
+  .business__input {
+    padding-left: 2rem;
+    margin-bottom: 4rem;
+  }
+}

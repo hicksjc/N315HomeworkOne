@@ -1,0 +1,51 @@
+.why__go-info {
+  width: 75%;
+  padding-left: 18rem;
+  padding-top: 3rem;
+  font-size: $fs-h3;
+  &-title_orange {
+    color: rgba(255, 121, 0, 1);
+  }
+  &-title {
+    font-size: $fs-h2;
+  }
+  &--para2 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+}
+.why__go-how {
+  width: 25%;
+  padding-left: 18rem;
+  padding-top: 3rem;
+  font-size: $fs-h3;
+  &-column {
+    display: grid;
+    grid-template-columns: 40rem 40rem;
+    grid-gap: 5rem;
+  }
+  &-img {
+    margin-top: -5rem;
+  }
+  &-title {
+    font-size: $fs-h2;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 420px) {
+  .why__go-info {
+    width: 35rem;
+    margin-left: -16rem;
+  }
+  .why__go-how {
+    width: 35rem;
+    margin-left: -16rem;
+    &-column {
+      display: block;
+    }
+    &-img {
+      margin-top: 1rem;
+      width: 16rem;
+    }
+  }
+}
